@@ -61,4 +61,8 @@ public class GatlingAuthentication extends Simulation {
                 scn.injectOpen(atOnceUsers(1))
         ).protocols(protocol);
     }
+
+
+
+
 }

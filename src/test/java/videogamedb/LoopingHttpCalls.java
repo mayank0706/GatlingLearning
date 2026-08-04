@@ -28,7 +28,7 @@ public class LoopingHttpCalls extends Simulation {
                             .check(status().not(404), status().not(500)))
             );
 
-    // Scenario Builder
+    // Scenario Definition
     private ScenarioBuilder scn = scenario("Video Game Http Calls Looping")
             .exec(getAllVideoGames)
             .pause(Duration.ofMillis(4000))

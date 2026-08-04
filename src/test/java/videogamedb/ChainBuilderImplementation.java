@@ -24,7 +24,7 @@ public class ChainBuilderImplementation extends Simulation {
                     .get("/videogame/" + java.util.concurrent.ThreadLocalRandom.current().nextInt(10))
                     .check(status().in(200, 201, 202, 203)));
 
-    // Scenario Builder
+    // Scenario Definition
     private ScenarioBuilder scn = scenario("Get Video Games - Chain Builder")
             .exec(getAllVideoGames)
             .pause(Duration.ofMillis(5000))

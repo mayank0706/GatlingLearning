@@ -12,7 +12,7 @@ public class VideoGameTestsSessionVariables extends Simulation {
     // Http Protocol
     private HttpProtocolBuilder protocol = http.baseUrl("https://videogamedb.uk/api").acceptHeader("application/json");
 
-    // Scenario Builder
+    // Scenario Definition
     private ScenarioBuilder scn = scenario("Video Game Session Variables")
             .exec(http("Print Get All Games Response Using Session Variables")
                     .get("/videogame")

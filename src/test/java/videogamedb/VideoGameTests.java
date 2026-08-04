@@ -16,7 +16,7 @@ public class VideoGameTests extends Simulation {
             .baseUrl("https://videogamedb.uk/api")
             .acceptHeader("application/json");
 
-    // Scenario Builder
+    // Scenario Definition
     private ScenarioBuilder scn = scenario("Video Game DB Test")
             .exec(http("Get all games - first call")
                     .get("/videogame")
